@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(230, 229, 229);
+}
+
+
+.navbar {
+    list-style-type: none;
+    display: flex;
+    justify-content: right; 
+    background-color: #f8f9fa;
+    height: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.titulo{
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+
+.navbar li {
+    margin: 2px 60px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    color: #00800b;
+}
+
+.container {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+.box {
+    flex: 1 1 calc(33.33% - 20px);
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    max-width: 350px;
+    height: 300px;
+    border-radius: 10px;
+    position: relative;
+    border: 1px solid rgb(179, 179, 179);
+}
+
+.box-vermelho::after {
+    content: ''; 
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 55px; 
+    background-color: #ff2727; 
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; 
+}
+
+.box-verde::after {
+    content: ''; 
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 55px;
+    background-color: #008d2a; 
+    border-bottom-left-radius: 10px; 
+    border-bottom-right-radius: 10px; 
+}
+
+.box-amarelo::after {
+    content: '';
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 55px; 
+    background-color: #dadd20; 
+    border-bottom-left-radius: 10px; 
+    border-bottom-right-radius: 10px; 
+}
+
+
+@media screen and (max-width: 768px) {
+    .navbar li {
+        display: none; /* Esconde os itens do menu padrão */
+    }
+    .menu-icon {
+        display: block; /* Exibe o ícone do menu */
+    }
+    .box {
+        flex-basis: calc(50% - 20px); /* Em telas menores que 768px, altera a largura para cerca de 1/2 do contêiner */
+    }
+    .navbar li {
+        display: block; /* Exibe os itens do menu padrão */
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .navbar li {
+        display: block; /* Exibe os itens do menu padrão */
+    }
+    .menu-icon {
+        display: none; /* Oculta o ícone do menu */
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .box {
+        flex-basis: calc(100% - 20px); /* Em telas menores que 500px, altera a largura para ocupar todo o contêiner */
+    }
+}
+
+h3 {
+    padding-top: 20px;
+}
+
+.texto-imagem {
+    background-image: url(/imagens/ajuda-1.jpg); 
+    background-size:cover;
+    background-position: center;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding-top: 250px;
+    height: 600px;
+    margin-bottom: 30px;
+}
+
+.jumbotron h1 {
+    font-size: 36px;
+}
+
+.menu-icon img {
+    width: 30px;
+}
+
+
+.dropdown-item {
+    text-align: left; 
+    white-space: normal; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+
+.ver-mais {
+    position: absolute; 
+    bottom: 10px; 
+    right: 10px; 
+    border: none;
+    padding: 5px 20px; 
+    z-index: 1;
+    background-color:transparent;
+    color:#f8f9fa;
+}
