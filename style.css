@@ -51,7 +51,7 @@ body{
     background-color: rgb(255, 255, 255);
     padding: 10px;
     margin: 10px;
-    text-align: center;
+    text-align: left;
     max-width: 350px;
     height: 300px;
     border-radius: 10px;
@@ -128,6 +128,15 @@ body{
 
 h3 {
     padding-top: 20px;
+    padding-left: 20px;
+    font-size: 32px;
+    font-family:system-ui, -apple-system;
+    font-weight: 700;
+    padding-bottom: 30px;
+}
+
+p{
+    padding-left: 20px;
 }
 
 .texto-imagem {
