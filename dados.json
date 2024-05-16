@@ -7,20 +7,20 @@
     },
     {
         "titulo": "CNH",
-        "descricao": "Emitir segunda via da CNH",
+        "descricao": "Emitir segunda via da Carteira Nacional de habilitação",
         "link": "https://www.rs.gov.br/carta-de-servicos/servicos?servico=6200",
-        "tipo": "segunda via"
-    },
-    {
-        "titulo": "Título de eleitor",
-        "descricao": "Emitir segunda via do título de eleitor",
-        "link": "https://www.tse.jus.br/comunicacao/noticias/2023/Outubro/perdeu-o-titulo-de-eleitor-veja-como-tirar-a-2o-via-do-documento",
         "tipo": "segunda via"
     },
     {
         "titulo": "Carteira de Trabalho",
         "descricao": "Emitir segunda via da Carteira de Trabalho",
         "link": "https://empregabrasil.mte.gov.br/sp_faq/21-perdi-a-minha-ctps-fisica-posso-solicitar-a-ctps-digital-pelo-aplicativo",
+        "tipo": "segunda via"
+    },
+    {
+        "titulo": "Título de eleitor",
+        "descricao": "Emitir segunda via do título de eleitor",
+        "link": "https://www.tse.jus.br/comunicacao/noticias/2023/Outubro/perdeu-o-titulo-de-eleitor-veja-como-tirar-a-2o-via-do-documento",
         "tipo": "segunda via"
     },
     {
@@ -110,7 +110,7 @@
     },
     { 
         "titulo": "Conserto eletrodomésticos",
-        "descricao": "A Universidade Unisinos e a  Universidade Feevale mobilizam uma ação para conserto de eletrônicos que foram afetados pelas águas das enchentes.",
+        "descricao": "A Universidade Unisinos e a Universidade Feevale mobilizam uma ação para conserto de eletrônicos que foram afetados pelas águas das enchentes.",
         "link": "https://fenacon.org.br/rede-de-noticias/sescon-rs-informa-unisinos-e-freevale-mobilizam-acao-para-conserto-de-eletronicos-afetados-pelas-aguas/#:~:text=A%20Universidade%20Unisinos%20e%20a,mesmo%20que%20tenham%20sido%20molhados",
         "tipo": "reformas"
     }
