@@ -1,0 +1,120 @@
+[
+    {
+        "titulo": "Carteira de identidade",
+        "descricao": "Emitir segunda via da Carteira de identidade",
+        "link": "https://igp.rs.gov.br/2-via-on-line/1000",
+        "tipo": "segunda via"
+    },
+    {
+        "titulo": "CNH",
+        "descricao": "Emitir segunda via da CNH",
+        "link": "https://www.rs.gov.br/carta-de-servicos/servicos?servico=6200",
+        "tipo": "segunda via"
+    },
+    {
+        "titulo": "Título de eleitor",
+        "descricao": "Emitir segunda via do título de eleitor",
+        "link": "https://www.tse.jus.br/comunicacao/noticias/2023/Outubro/perdeu-o-titulo-de-eleitor-veja-como-tirar-a-2o-via-do-documento",
+        "tipo": "segunda via"
+    },
+    {
+        "titulo": "Carteira de Trabalho",
+        "descricao": "Emitir segunda via da Carteira de Trabalho",
+        "link": "https://empregabrasil.mte.gov.br/sp_faq/21-perdi-a-minha-ctps-fisica-posso-solicitar-a-ctps-digital-pelo-aplicativo",
+        "tipo": "segunda via"
+    },
+    {
+        "titulo": "Reconstrução dos lares",
+        "descricao": "Solicitar e oferecer ajuda para recuperação dos lares, por meio de mutirões de limpeza, fornecimento de kits de higiene/limpeza e itens domésticos básicos.",
+        "link": "https://www.meulardevolta.com.br/",
+        "tipo": "reformas"
+    },
+    {
+        "titulo": "Substituição de óculos de grau",
+        "descricao": "As óticas Willy e Coliseu se propuseram a providenciar até 01 óculos novo por CPF. Coliseu via email: atendimento@coliseu.com.br, Willy telefones 51989267973 ou 51997534975",
+        "link": "",
+        "tipo": "saúde"
+    },
+    {
+        "titulo": "Bolsa Família",
+        "descricao": "Solicitar a antecipação do pagamento para 17/05.",
+        "link": "https://g1.globo.com/politica/noticia/2024/05/02/chuvas-no-rs-ministerio-facilita-saque-e-antecipa-pagamentos-do-bolsa-familia-no-estado.ghtml",
+        "tipo": "assistência financeira"
+    },
+    {
+        "titulo": "Seguro de Danos Físicos  do Imóvel (DFI)",
+        "descricao": "Um seguro habitacional para imóveis financiados pela Caixa Econômica Federal que cobre alagamentos.",
+        "link": "https://www.caixaseguradora.com.br/paravoce/habitacional/coberturas-e-assistencias/habitacional-mais",
+        "tipo": "seguros"
+    },
+    { 
+        "titulo": "Saque calamidade FGTS",
+        "descricao": "Caso seu município tenha declarado formalmente o estado de calamidade pública é possível a solicitação do saque via site ou app do FGTS, desde que respeitado o intervalo mínimo de 12 meses entre um saque e outro.",
+        "link": "https://www.fgts.gov.br/Documents/guia_solicitacao_saque_app_calamidade_v2.pdf",
+        "tipo": "assistência financeira"
+    },
+    { 
+        "titulo": "Renegociação de dívidas",
+        "descricao": "Verifique a possibilidade de renegociar eventuais dívidas. Bancos envolvidos até o momento:Itaú, Bradesco, Santander, BTG Pactual, Banco do Brasil e Caixa Econômica Federal.",
+        "link": "https://www.cnnbrasil.com.br/blogs/fernando-nakagawa/economia/gauchos-afetados-poderao-pausar-ou-ren",
+        "tipo": "assistência financeira"
+    },
+    { 
+        "titulo": "Pausa no Financiamento Habitacional",
+        "descricao": "Possibilidade de pausar os pagamentos de financiamento habitacional por até três meses,mediante solicitação via site ou app da Caixa. Caso haja prestações em atraso, há a chance de incorporar esses valores ao saldo devedor, facilitando a recuperação financeira do mutuário. Importante verificar a possibilidade de juros; em caso de dúvidas, contate sua         agência.",
+        "link": "https://www.caixa.gov.br/atendimento/aplicativos/habitacao/Paginas/default.aspx",
+        "tipo": "assistência financeira"
+    },
+    { 
+        "titulo": "Antecipação do Benefício Previdenciário (INSS)",
+        "descricao": "Antecipação dos Benefícios de Prestação Continuada (BPC) pode ser solicitada no banco onde os segurados recebem o pagamento",
+        "link": "https://agenciagov.ebc.com.br/noticias/202405/ministerio-da-previdencia-e-inss-antecipam-beneficios-para-familias-atingidas-por-catastrofe-climatica",
+        "tipo": "assistência financeira"
+    },
+    { 
+        "titulo": "Programa São João Popular",
+        "descricao": "Medicamentos Gratuitos, válido até 31/05/2024 para os medicamentos e cidades listados no link abaixo. ",
+        "link": "https://www.saojoaofarmacias.com.br/blog/lista-medicamentos-e-cidades-sao-joao-popular",
+        "tipo": "saúde"
+    },
+    { 
+        "titulo": "Programa Volta Por Cima, do Governo Estadual",
+        "descricao": "Pagamento, em parcela única, de R$2.500,00 para famílias que atenderem aos critérios.",
+        "link": "https://www.estado.rs.gov.br/novo-decreto-de-beneficio-do-programa-volta-por-cima-e-publicado-663eb2ddbea78#:~:text=O%20programa%20Volta%20por%20Cima,espec%C3%ADficas%20por%20meio%20de%20decreto.",
+        "tipo": "assistência financeira"
+    },
+    { 
+        "titulo": "Pix do Governo Estadual",
+        "descricao": "Distribuição de R$2.000,00 para famílias afetadas pelas enchentes, e que atendam aos critérios.",
+        "link": "https://www.estado.rs.gov.br/comite-gestor-do-pix-sos-rio-grande-do-sul-define-criterios-para-a-distribuicao-dos-recursos",
+        "tipo": "assistência financeira"
+        
+    },
+    { 
+        "titulo": "Imposto de Renda",
+        "descricao": "Restituição antecipada para população do RS. Prazo para declaração prorrogado para 31/08",
+        "link": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2024/maio/restituicoes-do-imposto-de-renda-para-contribuintes-do-rio-grande-do-sul-serao-priorizadas",
+        "tipo": "assistência financeira"
+    }, 
+    { 
+        "titulo": "Programa Cartão Reconstruir",
+        "descricao": "Subsídio aos cidadãos para a compra de materiais de construção destinados à reforma, ampliação ou conclusão de unidades habitacionais afetadas por desastres. Há pendência de definições (como valor), mas já foi aprovado.",
+        "link": "https://www12.senado.leg.br/noticias/materias/2024/05/08/aprovado-subsidio-para-reconstruir-casas-atingidas-por-enchentes-vai-a-camara",
+        "tipo": "reformas"
+    },
+    { 
+        "titulo": "Coberturas de seguros",
+        "descricao": "Susep orienta sobre coberturas de seguros que podem ser acionadas pelas vítimas",
+        "link": "https://www.gov.br/susep/pt-br/central-de-conteudos/",
+        "tipo": "seguros"
+    },
+    { 
+        "titulo": "Conserto eletrodomésticos",
+        "descricao": "A Universidade Unisinos e a  Universidade Feevale mobilizam uma ação para conserto de eletrônicos que foram afetados pelas águas das enchentes.",
+        "link": "https://fenacon.org.br/rede-de-noticias/sescon-rs-informa-unisinos-e-freevale-mobilizam-acao-para-conserto-de-eletronicos-afetados-pelas-aguas/#:~:text=A%20Universidade%20Unisinos%20e%20a,mesmo%20que%20tenham%20sido%20molhados",
+        "tipo": "reformas"
+    }
+
+
+
+]
