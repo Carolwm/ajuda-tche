@@ -45,7 +45,9 @@ body{
     flex-wrap: wrap;
     justify-content: center; 
 }
-
+.container p{
+    overflow-y:auto;
+}
 .box {
     flex: 1 1 calc(33.33% - 20px);
     background-color: rgb(255, 255, 255);
@@ -57,6 +59,7 @@ body{
     border-radius: 10px;
     position: relative;
     border: 1px solid rgb(179, 179, 179);
+    overflow: hidden;
 }
 
 .box-vermelho::after {
@@ -94,7 +97,9 @@ body{
     border-bottom-left-radius: 10px; 
     border-bottom-right-radius: 10px; 
 }
-
+.dropdown-menu{
+    width: 320px;
+}
 
 @media screen and (max-width: 768px) {
     .navbar li {
@@ -127,9 +132,10 @@ body{
 }
 
 h3 {
-    padding-top: 20px;
-    padding-left: 20px;
-    font-size: 32px;
+    /* padding-top: 20px; */
+    padding-left: 20px; 
+    /* font-size: 32px;  */
+    padding: 1rem 0;
     font-family:system-ui, -apple-system;
     font-weight: 700;
     padding-bottom: 30px;
@@ -164,6 +170,7 @@ p{
     white-space: normal; 
     overflow: hidden; 
     text-overflow: ellipsis; 
+    padding: 0;
 }
 
 .ver-mais {
