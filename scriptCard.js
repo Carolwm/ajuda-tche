@@ -25,7 +25,8 @@ function createCardsType(tipo) {
         .then(response => response.json())
         .then(data => {
             let i = 1
-            data.forEach(function (item, index) {
+            data.forEach(function (item) {
+                
                 // Verifica se o item tem o tipo especificado
                 if (item.tipo && item.tipo.toLowerCase() === tipo.toLowerCase()) {
                     const card = document.createElement('div');
@@ -42,11 +43,13 @@ function createCardsType(tipo) {
             });
         });
 }
-
 // Caminho do arquivo JSON
-var jsonFilePath = 'dados.json';
-const cards = []
-// Chamada da função para buscar o arquivo JSON e criar os cartões
-fetch(jsonFilePath)
-    .then(response => response.json())
-    .then(data => createCards(data));
+const jsonFilePath = 'dados.json';
+function createAll(){
+    // Chamada da função para buscar o arquivo JSON e criar os cartões
+    fetch(jsonFilePath)
+        .then(response => response.json())
+        .then(data => createCards(data));
+}
+
+createAll();
