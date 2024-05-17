@@ -259,16 +259,27 @@ main > div{
 
 .box-verde .square {
     background-color: #008d2a; /* Cor verde */
+    opacity: 0.5;
 }
 
 .box-vermelho .square {
     background-color: #F50D0D; /* Cor vermelha */
+    opacity: 0.5;
 }
 
 .box-amarelo .square {
     background-color: #FFC520; /* Cor amarela */
+    opacity: 0.5;
 }
 
+.box-azul .square {
+    background-color: #006DFF; /* Cor amarela */
+    opacity: 0.5;
+}
+.box-cinza .square {
+    background-color: #8ab0a4; /* Cor amarela */
+    opacity: 0.5;
+}
 .ver-mais {
     position: absolute; 
     right: 0px; 
