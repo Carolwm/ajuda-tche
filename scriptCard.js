@@ -3,10 +3,28 @@ let allCards = [];
 
 function createCards(data) {
     const cardsContainer = document.getElementById('container');
-    const classes = ['box-verde', 'box-vermelho', 'box-amarelo'];
+    // const classes = ['box-verde', 'box-vermelho', 'box-amarelo'];
+
     data.forEach(function (item, index) {
         var card = document.createElement('div');
-        card.classList.add('box', classes[index % 3]);
+        card.classList.add('box');
+        switch (item.tipo) {
+            case 'saúde':
+                card.classList.add('box-verde');
+                break;
+            case 'assistência financeira':
+                card.classList.add('box-azul');
+                break;
+            case 'segunda via':
+                card.classList.add('box-cinza');
+                break;
+            case 'reformas':
+                card.classList.add('box-amarelo');
+                break;
+            case 'seguros':
+                card.classList.add('box-vermelho');
+                break;
+        }
 
         var square = document.createElement('div');
         square.classList.add('square');
@@ -48,7 +66,24 @@ function createCardsType(tipo) {
             data.forEach(function (item) {
                 if (item.tipo && item.tipo.toLowerCase() === tipo.toLowerCase()) {
                     const card = document.createElement('div');
-                    card.classList.add('box', classes[i % 3]);
+                    card.classList.add('box');
+                    switch (item.tipo) {
+                        case 'saúde':
+                            card.classList.add('box-verde');
+                            break;
+                        case 'assistência financeira':
+                            card.classList.add('box-azul');
+                            break;
+                        case 'segunda via':
+                            card.classList.add('box-cinza');
+                            break;
+                        case 'reformas':
+                            card.classList.add('box-amarelo');
+                            break;
+                        case 'seguros':
+                            card.classList.add('box-vermelho');
+                            break;
+                    }
                     var square = document.createElement('div');
                     square.classList.add('square');
                     card.appendChild(square);

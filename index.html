@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./imagens/rs2.png" type="image/x-icon">
+    <title>Ajuda tchê</title>
+    <!-- Latest compiled and minified CSS -->
+    <!--<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md fixed-top">
+            <div class="container-fluid menu">
+                <img class="navbar-brand" src="./imagens/ajudatche-logo.svg" alt="Logo ajuda tchê">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse bg-light" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="createAll()">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown">
+                                Serviços
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#x"
+                                        onclick="createCardsType('assistência financeira')">Assistência Financeira</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#x" onclick="createCardsType('segunda via')">Segunda
+                                        via Docs</a></li>
+                                <li><a class="dropdown-item" href="#x" onclick="createCardsType('reformas')">Reformas e
+                                        Reparos</a></li>
+                                <li><a class="dropdown-item" href="#x" onclick="createCardsType('saúde')">Assistência
+                                        Saúde</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#x" onclick="createCardsType('seguros')">
+                                    Seguros</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#" onclick="createAll()">Todos serviços</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#voluntarios">Quem somos</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header> 
+
+    <main>
+
+        <div class="destaque-container">
+            <div class="destaque-texto">
+                <h2 class="titulo-destaque">Informações úteis pós enchentes</h2>
+                <h4 class="descricao-destaque">Encontre ajuda para recomeçar, aqui!</h4>
+                <div class="linha-personalizada"></div>
+            </div>
+            <div class="destaque-imagem">
+                <img src="imagens/destaque.jpg" alt="Descrição da imagem">
+            </div>
+        </div>
+
+        <div class="contagem">
+            <div class="t1">
+                <h1>+334</h1>
+                <p>Municípios atingidos</p>
+            </div>
+            <div class="t2">
+                <h1>+121.000</h1>
+                <p>Pessoas impactadas</p>
+            </div>
+            <div class="t3">
+                <h1>+19.000</h1>
+                <p>Desabrigados</p>
+            </div>
+        </div>
+
+        <div class="texto-informacional">
+            <div class="informacao">
+                <h1>O que você encontra aqui</h1>
+                <p id="x">Abaixo você encontra Informações acompanhadas de links que te auxiliarão a recuperar
+                    documentos e
+                    objetos
+                    pessoais, adquirir medicamentos de forma gratuita, solicitar e/ou oferecer ajuda, solicitar seguros
+                    e
+                    conseguir auxilios oferecidos pelo governo. </p>
+            </div>
+        </div>
+
+        <div class="containerCards" id="container">
+        </div>
+
+        <div class="divisao"></div>
+
+        <div class="voluntarios" >
+            <h4 id="voluntarios">Pessoas que fizeram tudo isso acontecer</h4>
+            <h1>Agradecimentos aos voluntários:</h1>
+            <p>
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/in/ramonsl/" target="_blank"><i class="fab fa-linkedin"></i> Ramon Lummertz</a> | 
+                        <a href="https://www.linkedin.com/in/andrezzaandrade/" target="_blank"><i class="fab fa-linkedin"></i> Andrezza Andrade</a> |
+                        <a href="https://www.linkedin.com/in/juliano-ramos-matos-4a41b641/" target="_blank"><i class="fab fa-linkedin"></i> Juliano Ramos</a> |
+                        <a href="https://www.linkedin.com/in/lucassaraiva5/" target="_blank"><i class="fab fa-linkedin"></i> Lucas Saraiva</a> |
+                        <a href="https://www.linkedin.com/in/tiagoabadedias/" target="_blank"><i class="fab fa-linkedin"></i> Tiago Abade</a> |  
+                        <a href="https://www.linkedin.com/in/daniel-souza-729aa3183/" target="_blank"><i class="fab fa-linkedin"></i> Daniel Souza</a> |
+                        <a href="https://www.linkedin.com/in/larissa-carlos-b277401ab/" target="_blank"><i class="fab fa-linkedin"></i> Larissa Carlos</a> | 
+                        <a href="https://www.linkedin.com/in/ana-caroline-w-moreto-23818225b/" target="_blank"><i class="fab fa-linkedin"></i> Ana Caroline</a> |
+                        <a href="https://www.linkedin.com/in/bauercarol/" target="_blank"><i class="fab fa-linkedin"></i> Caroline Bauer</a> 
+                    </li>
+                </ul>
+            </p>
+            <p>
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/in/gabriela-anjos18/" target="_blank"><i class="fab fa-linkedin"></i> Gabriela Anjos</a> | 
+                        <a href="https://www.linkedin.com/in/luan-lippert-hoffmann-9b4204283/" target="_blank"><i class="fab fa-linkedin"></i> Luan Lippert</a> |
+                        <a href="https://www.linkedin.com/in/xjoaopedro/" target="_blank"><i class="fab fa-linkedin"></i> João Pedro</a> |
+                        <a href="https://www.linkedin.com/in/endriwmsi/" target="_blank"><i class="fab fa-linkedin"></i> Endriw Schiavenato</a> |
+                        <a href="https://www.linkedin.com/in/marcusviniciusbarcelos/" target="_blank"><i class="fab fa-linkedin"></i> Marcus Barcelos</a> |  
+                        <a href="https://www.linkedin.com/in/suelen-daitx-a912561a0/" target="_blank"><i class="fab fa-linkedin"></i> Suelen Daitx</a> |
+                        <a href="https://www.linkedin.com/in/andersongpatricio/" target="_blank"><i class="fab fa-linkedin"></i> Anderson Patrício</a> | 
+                        <a href="https://www.linkedin.com/in/leonardo-moraes-2b7513247/" target="_blank"><i class="fab fa-linkedin"></i> Leonardo Moraes</a> |
+                        <a href="https://www.linkedin.com/in/erick-rocha-saggiorato-b7861a269/" target="_blank"><i class="fab fa-linkedin"></i> Erick Rocha</a> 
+                    </li>
+                </ul>
+            </p>
+            <p>
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/in/douglas-rigol-8b70a62a1/" target="_blank"><i class="fab fa-linkedin"></i> Douglas Rigol</a> | 
+                        <a href="https://www.linkedin.com/in/marjorie-pereira-69855026b/" target="_blank"><i class="fab fa-linkedin"></i> Marjorie Pereira</a> |
+                        <!--<a href="link perfil" target="_blank"><i class="fab fa-linkedin"></i> fulano</a> |
+                        <a href="link perfil" target="_blank"><i class="fab fa-linkedin"></i> fulano</a> |
+                        <a href="link perfil" target="_blank"><i class="fab fa-linkedin"></i> fulano</a> |  
+                        <a href="link perfil" target="_blank"><i class="fab fa-linkedin"></i> fulano</a> |
+                        <a href="link perfil" target="_blank"><i class="fab fa-linkedin"></i> fulano</a> | 
+                        <a href="link perfil" target="_blank"><i class="fab fa-linkedin"></i> fulano</a> |
+                        <a href="link perfil" target="_blank"><i class="fab fa-linkedin"></i> fulano</a> -->
+                    </li>
+                </ul>
+            </p>
+    </main>
+
+
+    <footer class="footer">
+        <div class="footer-column">
+            <ul>
+                <li><a class="dropdown-item" href="#x" onclick="createCardsType('seguros')">Seguros</a></li>
+                <li><a class="nav-link" href="#" onclick="createCardsType('assistência financeira')">Assistência Financeira</a></li>
+                <li><a class="nav-link" href="#" onclick="createCardsType('segunda via')">Segunda via Docs</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <ul>
+                <li><a class="nav-link" href="#" onclick="createCardsType('reformas')">Reformas e Reparos</a></li>
+                <li><a class="nav-link" href="#" onclick="createCardsType('saúde')">Assistência Saúde</a></li>
+                <li><a class="nav-link" href="#" onclick="createAll()">Todos serviços</a></li>
+            </ul>
+        </div>
+        <div class="footer-column"> 
+            <img src="/imagens/ajudatche-logo-branco.svg" alt="">
+        </div>
+    </footer>
+    
+    <div class="logo">
+        <img src="/imagens/logo-curso.jpg" alt="" >
+        <div class="logo-column">
+            <div class="social-icons">
+                <a href="https://www.facebook.com/computacao.torres/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/ComputacaoRS" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/computacaotorres/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/adsulbra/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+
+    </main>
+
+
+    
+
+    <!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="scriptCard.js"></script>
+
+
+</body>
+
+</html>
+
