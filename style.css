@@ -5,9 +5,14 @@
     box-sizing: border-box;
 }
 
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
 body{
     background-color: rgb(255, 255, 255);
 }
+
 ul{
     list-style: none;
 }
@@ -28,13 +33,13 @@ h3 {
 /* Menu de nagegação */
 .navbar {
     list-style-type: none;
-    display: flex;
+    /* display: flex; */
     justify-content: space-between; 
     background-color: #f8f9fa;
     /* height: 120px; */
     font-family: Arial, Helvetica, sans-serif;
+    position: relative;
 }
-
 .navbar::after {
     content: '';
     position: absolute;
@@ -44,6 +49,16 @@ h3 {
     height: 4px; 
     background: linear-gradient(to right, #008d2a 10%, #ff2727 40%, #dadd20 100%);
 }
+.menu{
+    display: flex;
+    gap: 20%;
+}
+
+.navbar-nav{
+    display: flex;
+    gap: 3rem;
+}
+
 
 /* .titulo{
     margin-bottom: 30px;
@@ -52,9 +67,9 @@ h3 {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 } */
 
-.navbar li {
+/* .navbar li {
     margin: 2px 60px;
-}
+} */
 
 .navbar a {
     text-decoration: none;
@@ -66,9 +81,7 @@ h3 {
     color: #00800b;
 }
 
-/* .dropdown-menu{
-    width: 320px;
-} */
+
 
 /* .dropdown-item {
     text-align: left; 
@@ -79,7 +92,9 @@ h3 {
 } */
 
 main{
-    margin-top: 130px; 
+    /* margin-top: 120px;  */
+    padding: 2%;
+    
 }
 /* Banner - classe destaque */
 .destaque-container {
@@ -93,7 +108,7 @@ main{
 .destaque-texto {
     flex: 1;
     padding-right: 20px; /* Distância entre o texto e a imagem */
-    margin-left: 90px;
+    /* margin-left: 90px; */
     margin-bottom: 60px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
@@ -112,7 +127,7 @@ main{
 }
 
 .linha-personalizada {
-    width: 300px; 
+    /* width: 300px;  */
     height: 2px; 
     background-color: #8f8f8f; 
     margin-top: 20px; 
@@ -132,8 +147,8 @@ main{
     display: flex;
     justify-content: space-between;
     height: 160px;
-    margin-left: 70px;
-    margin-right: 70px;
+    /* margin-left: 70px;
+    margin-right: 70px; */
     border-radius: 7px;
     margin-bottom: 80px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.438);
@@ -280,8 +295,8 @@ main{
 
 /* Voluntários */
 .voluntarios{
-    margin-left: 60px;
-    margin-right: 60px;
+    /* margin-left: 60px;
+    margin-right: 60px; */
     text-align: center;
     height: 300px;
 }
@@ -314,7 +329,7 @@ main{
 
 .footer-column {
     flex: 1;
-    margin-right: 20px;
+    /* margin-right: 20px; */
 }
 
 .footer-column:last-child {
@@ -333,22 +348,22 @@ main{
 
 /* Breakpoint para dispositivos médios */
 @media screen and (max-width: 768px) {
-    body {
-        overflow-x: hidden;
-    }
+   
     .navbar li {
         /* display: none; Esconde os itens do menu padrão */
     } 
-    
+    .navbar-nav{
+        gap: 0;
+    }
     .menu-icon {
-        /* display: block; Exibe o ícone do menu */
+        /* display: block;  Exibe o ícone do menu */
     }
     /* .box { */
         /* flex-basis: calc(50% - 20px); Em telas menores que 768px, altera a largura para cerca de 1/2 do contêiner */
     /* } */
     /* .navbar li {
         display: block; /* Exibe os itens do menu padrão */
-    /* } */ */
+    /* } */ 
     .destaque-container {
         flex-direction: column;
         align-items: center;
@@ -375,7 +390,6 @@ main{
     .contagem{
         margin: 0 5%;
         height: auto;
-        margin-top: 260px;
         flex-direction: column;
         gap: 1rem;
         width: 90%;
@@ -404,7 +418,7 @@ main{
         width: 95%;
     }
     .containerCards{
-        margin-top: 220px;
+        margin-top: 180px;
     }
     footer{
         margin-top: 100px;
@@ -413,13 +427,5 @@ main{
     }
 }
 
-/* Breakpoint para ajuste do footer abaixo de 470px */
-@media screen and (max-width: 470px) {
-    footer{
-        margin-top: 250px;
-        flex-direction: column;
-        align-items: center;
-    }
 
-}
 
