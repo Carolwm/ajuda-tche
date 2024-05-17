@@ -17,14 +17,14 @@
     <nav class="navbar navbar-expand-md fixed-top navbar-white">
         <h2 class="titulo">AJUDA TCHÊ</h2>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fas fa-bars"></i> <!-- Ícone de barras de hambúrguer -->
         </button>
 
         <div class="collapse navbar-collapse bg-light" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#" onclick="createAll()" >Inicio</a>
+                    <a class="nav-link" href="#" onclick="createAll()">Inicio</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -32,11 +32,17 @@
                         Serviços
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#" onclick="createCardsType('assistência financeira')">Assistência Financeira</a></li>
-                        <li><a class="dropdown-item" href="#" onclick="createCardsType('segunda via')">Segunda via Docs</a></li>
-                        <li><a class="dropdown-item" href="#" onclick="createCardsType('reformas')">Reformas e Reparos</a></li>
-                        <li><a class="dropdown-item" href="#" onclick="createCardsType('saúde')">Assistência Saúde</a></li>
-                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#"
+                                onclick="createCardsType('assistência financeira')">Assistência Financeira</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="createCardsType('segunda via')">Segunda via
+                                Docs</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="createCardsType('reformas')">Reformas e
+                                Reparos</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="createCardsType('saúde')">Assistência Saúde</a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
                         <li><a class="dropdown-item" href="#" onclick="createAll()">Todos serviços</a></li>
                     </ul>
                 </li>
@@ -46,52 +52,91 @@
             </ul>
         </div>
     </nav>
+    <main>
 
-    <div class="destaque-container">
-        <div class="destaque-texto">
-            <h2 class="titulo-destaque">Informações úteis pós enchentes</h2>
-            <h4 class="descricao-destaque">Encontre ajuda para recomeçar, aqui!</h4>
-            <div class="linha-personalizada"></div>
-        </div>
-        <div class="destaque-imagem">
-            <img src="imagens/destaque.jpg" alt="Descrição da imagem">
-        </div>
-    </div>
-
-    <div class="contagem">
-        <div class="t1">
-            <h1>+334</h1>
-            <p>Municípios atingidos</p>
-        </div>
-        <div class="t2">
-            <h1>+121.000</h1>
-            <p>Pessoas impactadas</p>
-        </div>
-        <div class="t3">
-            <h1>+19.000</h1>
-            <p>Desabrigados</p>
+        <div class="destaque-container">
+            <div class="destaque-texto">
+                <h2 class="titulo-destaque">Informações úteis pós enchentes</h2>
+                <h4 class="descricao-destaque">Encontre ajuda para recomeçar, aqui!</h4>
+                <div class="linha-personalizada"></div>
+            </div>
+            <div class="destaque-imagem">
+                <img src="imagens/destaque.jpg" alt="Descrição da imagem">
+            </div>
         </div>
 
-    </div>
-    
-    <div class="texto-informacional">
-        <div class="informacao">
-            <h1>O que você encontra aqui</h1>
-            <p>Abaixo você encontra Informações acompanhadas de links que te auxiliarão a recuperar documentos e objetos pessoais, adquirir medicamentos de forma gratuita, solicitar e/ou oferecer ajuda, solicitar seguros e conseguir auxilios oferecidos pelo governo. </p>
-    </div>
+        <div class="contagem">
+            <div class="t1">
+                <h1>+334</h1>
+                <p>Municípios atingidos</p>
+            </div>
+            <div class="t2">
+                <h1>+121.000</h1>
+                <p>Pessoas impactadas</p>
+            </div>
+            <div class="t3">
+                <h1>+19.000</h1>
+                <p>Desabrigados</p>
+            </div>
+        </div>
 
-    <div class="container" id="container">
-    </div>
+        <div class="texto-informacional">
+            <div class="informacao">
+                <h1>O que você encontra aqui</h1>
+                <p>Abaixo você encontra Informações acompanhadas de links que te auxiliarão a recuperar documentos e
+                    objetos
+                    pessoais, adquirir medicamentos de forma gratuita, solicitar e/ou oferecer ajuda, solicitar seguros
+                    e
+                    conseguir auxilios oferecidos pelo governo. </p>
+            </div>
+        </div>
 
-    <div class="divisao"></div> 
+        <div class="containerCards" id="container">
+        </div>
 
-    <div class="voluntarios" id="voluntarios">
-        <h4>Pessoas que fizeram tudo isso acontecer</h4>
-        <h1>Agradecimentos aos voluntários:</h1>
-        <p>Nome completo - Linkedin; Nome completo - Linkedin; Nome completo - Linkedin; Nome completo - Linkedin; Nome completo- Linkedin; Nome completo- Linkedin; Nome completo - Linkedin; Nome completo - Linkedin; Nome completo - Linkedin; Nome completo - Linkedin; Nome completo- Linkedin; Nome completo- Linkedin; Nome completo - Linkedin; Nome completo - Linkedin; Nome completo - Linkedin; Nome completo - Linkedin; Nome completo- Linkedin; Nome completo- Linkedin;</p>
-    </div>
+        <div class="divisao"></div>
 
-    
+        <div class="voluntarios" id="voluntarios">
+            <h4>Pessoas que fizeram tudo isso acontecer</h4>
+            <h1>Agradecimentos aos voluntários:</h1>
+            <p>Nome completo - Linkedin; Nome completo - Linkedin; Nome completo - Linkedin; Nome completo - Linkedin;
+                Nome
+                completo- Linkedin; Nome completo- Linkedin; Nome completo - Linkedin; Nome completo - Linkedin; Nome
+                completo - Linkedin; Nome completo - Linkedin; Nome completo- Linkedin; Nome completo- Linkedin; Nome
+                completo - Linkedin; Nome completo - Linkedin; Nome completo - Linkedin; Nome completo - Linkedin; Nome
+                completo- Linkedin; Nome completo- Linkedin;</p>
+        </div>
+    </main>
+
+
+    <footer class="footer">
+        <div class="footer-column">
+            <!--coluna esquerda -->
+            <h4>Informações</h4>
+            <ul>
+                <li><a href="#">Sobre nós</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Termos de serviço</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <!--coluna central -->
+            <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Política de privacidade</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <!--coluna direita -->
+            <h4>Siga-nos</h4>
+            <div class="social-icons">
+                <!-- Ícones de redes sociais aqui -->
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
@@ -100,33 +145,5 @@
     <script src="scriptCard.js"></script>
 
 </body>
-</html>
 
-<footer class="footer">
-    <div class="footer-column">
-        <!--coluna esquerda -->
-        <h4>Informações</h4>
-        <ul>
-            <li><a href="#">Sobre nós</a></li>
-            <li><a href="#">Contato</a></li>
-            <li><a href="#">Termos de serviço</a></li>
-        </ul>
-    </div>
-    <div class="footer-column">
-        <!--coluna central -->
-        <ul>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Política de privacidade</a></li>
-        </ul>
-    </div>
-    <div class="footer-column">
-        <!--coluna direita -->
-        <h4>Siga-nos</h4>
-        <div class="social-icons">
-            <!-- Ícones de redes sociais aqui -->
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-        </div>
-    </div>
-</footer>
+</html>

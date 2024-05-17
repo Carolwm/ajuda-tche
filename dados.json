@@ -1,6 +1,6 @@
 [
     {
-        "titulo": "Carteira de identidade",
+        "titulo": "Carteira de Identidade",
         "descricao": "Emitir segunda via da Carteira de identidade",
         "link": "https://igp.rs.gov.br/2-via-on-line/1000",
         "tipo": "segunda via"
@@ -18,19 +18,19 @@
         "tipo": "segunda via"
     },
     {
-        "titulo": "Título de eleitor",
+        "titulo": "Título de Eleitor",
         "descricao": "Emitir segunda via do título de eleitor",
         "link": "https://www.tse.jus.br/comunicacao/noticias/2023/Outubro/perdeu-o-titulo-de-eleitor-veja-como-tirar-a-2o-via-do-documento",
         "tipo": "segunda via"
     },
     {
-        "titulo": "Reconstrução dos lares",
+        "titulo": "Reconstrução dos Lares",
         "descricao": "Solicitar e oferecer ajuda para recuperação dos lares, por meio de mutirões de limpeza, fornecimento de kits de higiene/limpeza e itens domésticos básicos.",
         "link": "https://www.meulardevolta.com.br/",
         "tipo": "reformas"
     },
     {
-        "titulo": "Substituição de óculos de grau",
+        "titulo": "Substituição Óculos de Grau",
         "descricao": "As óticas Willy e Coliseu se propuseram a providenciar até 01 óculos novo por CPF. Coliseu via email: atendimento@coliseu.com.br, Willy telefones 51989267973 ou 51997534975",
         "link": "",
         "tipo": "saúde"
@@ -42,7 +42,7 @@
         "tipo": "assistência financeira"
     },
     {
-        "titulo": "Seguro de Danos Físicos  do Imóvel (DFI)",
+        "titulo": "Seguro do Imóvel (DFI)",
         "descricao": "Um seguro habitacional para imóveis financiados pela Caixa Econômica Federal que cobre alagamentos.",
         "link": "https://www.caixaseguradora.com.br/paravoce/habitacional/coberturas-e-assistencias/habitacional-mais",
         "tipo": "seguros"
@@ -60,13 +60,13 @@
         "tipo": "assistência financeira"
     },
     { 
-        "titulo": "Pausa no Financiamento Habitacional",
+        "titulo": "Pausa no Financiamento Hab.",
         "descricao": "Possibilidade de pausar os pagamentos de financiamento habitacional por até três meses,mediante solicitação via site ou app da Caixa. Caso haja prestações em atraso, há a chance de incorporar esses valores ao saldo devedor, facilitando a recuperação financeira do mutuário. Importante verificar a possibilidade de juros; em caso de dúvidas, contate sua         agência.",
         "link": "https://www.caixa.gov.br/atendimento/aplicativos/habitacao/Paginas/default.aspx",
         "tipo": "assistência financeira"
     },
     { 
-        "titulo": "Antecipação do Benefício Previdenciário (INSS)",
+        "titulo": "Antecipação do INSS",
         "descricao": "Antecipação dos Benefícios de Prestação Continuada (BPC) pode ser solicitada no banco onde os segurados recebem o pagamento",
         "link": "https://agenciagov.ebc.com.br/noticias/202405/ministerio-da-previdencia-e-inss-antecipam-beneficios-para-familias-atingidas-por-catastrofe-climatica",
         "tipo": "assistência financeira"
@@ -78,7 +78,7 @@
         "tipo": "saúde"
     },
     { 
-        "titulo": "Programa Volta Por Cima, do Governo Estadual",
+        "titulo": "Programa Volta Por Cima",
         "descricao": "Pagamento, em parcela única, de R$2.500,00 para famílias que atenderem aos critérios.",
         "link": "https://www.estado.rs.gov.br/novo-decreto-de-beneficio-do-programa-volta-por-cima-e-publicado-663eb2ddbea78#:~:text=O%20programa%20Volta%20por%20Cima,espec%C3%ADficas%20por%20meio%20de%20decreto.",
         "tipo": "assistência financeira"

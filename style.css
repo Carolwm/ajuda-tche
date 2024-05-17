@@ -1,13 +1,31 @@
+/* reset CSS */
 * {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body{
     background-color: rgb(255, 255, 255);
 }
+ul{
+    list-style: none;
+}
+h3 {
+    /* padding-top: 20px; */
+    /* padding-left: 10px;  */
+    /* font-size: 32px;  */
+    /* padding: 1rem 0; */
+    font-family:system-ui, -apple-system;
+    font-weight: 700;
+    /* padding-bottom: 30px; */
+}
 
+/* p{
+    padding-left: 20px;
+} */
 
+/* Menu de nagegação */
 .navbar {
     list-style-type: none;
     display: flex;
@@ -15,7 +33,6 @@ body{
     background-color: #f8f9fa;
     height: 100px;
     font-family: Arial, Helvetica, sans-serif;
-    
     
 }
 
@@ -36,7 +53,6 @@ body{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
-
 .navbar li {
     margin: 2px 60px;
 }
@@ -51,16 +67,26 @@ body{
     color: #00800b;
 }
 
-
 .dropdown-menu{
     width: 320px;
 }
 
+.dropdown-item {
+    text-align: left; 
+    white-space: normal; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    padding: 0;
+}
+
+main{
+    margin-top: 130px; 
+}
+/* Banner - classe destaque */
 .destaque-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 130px; 
     margin-bottom: 30px; 
     height: 400px;
 }
@@ -101,6 +127,7 @@ body{
     margin-right: 80px;
 }
 
+/* Classe contagem */
 .contagem {
     background-color: #0E5F4F;
     display: flex;
@@ -120,7 +147,6 @@ body{
     align-items: center;
     justify-content: center;
     flex: 1; 
-   
 }
 
 .contagem h1 {
@@ -144,6 +170,7 @@ body{
     margin-left: 10px;
 }
 
+/* Texto Informativo */
 .informacao{
     height: 160px;
     margin-left: 130px;
@@ -162,8 +189,9 @@ body{
     font-size: 20px;
 }
 
+/* Estilo dos cartões */
 
-.container {
+.containerCards {
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-wrap: wrap;
@@ -177,33 +205,39 @@ body{
     position: relative; 
 }
 
-.container p{
+/* .containerCards p{
     margin-top: -20px;
     margin-right: 10px;
-}
+} */
 
-.container h3 {
+.containerCards h3 {
     margin-top: 60px;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     font-size: 24px;
 }
 
-
-
 .box {
-    flex: 1 1 calc(33.33% - 20px);
+    /* flex: 1 1 calc(33.33% - 20px); */
     background-color: #f1f1f1;
-    padding: 10px;
+    padding: 1rem;
     margin: 10px;
-    max-width: 500px;
+    /* max-width: 500px; */
+    width: 380px;
     height: 250px;
     border-radius: 10px;
     position: relative;
     border: 1px solid rgb(179, 179, 179);
-    overflow-y: auto;
     flex-direction: column;
-    scrollbar-width:thin;
+    /* scrollbar-width:thin; */
     
+}
+.box p{
+    overflow-y: auto;
+    height: 80px;
+}
+/* Ocultar a barra de rolagem */
+.box p::-webkit-scrollbar{
+    background-color: transparent;
 }
 
 .box-verde .square {
@@ -217,7 +251,6 @@ body{
 .box-amarelo .square {
     background-color: #FFC520; /* Cor amarela */
 }
-
 
 .ver-mais {
     position: absolute; 
@@ -235,8 +268,8 @@ body{
     border-radius: 7px;
     position: absolute; 
     left: 10px; 
-    margin-left: 20px;
-    margin-top: 10px;
+    /* margin-left: 20px; */
+    /* margin-top: 10px; */
 }
 
 .divisao {
@@ -244,9 +277,9 @@ body{
     margin-top: 10px; 
     margin-bottom: 10px;
     height: 30px;
-    
 }
 
+/* Voluntários */
 .voluntarios{
     margin-left: 60px;
     margin-right: 60px;
@@ -255,7 +288,6 @@ body{
 }
 
 .voluntarios h4{
-   
     border: 1px solid #0E5F4F;
     padding: 5px 20px;
     display: inline-block;
@@ -272,85 +304,7 @@ body{
     font-weight: 600;
 }
 
-
-
-
-
-
-@media screen and (max-width: 768px) {
-    body {
-        overflow-x: hidden;
-    }
-    .navbar li {
-        display: none; /* Esconde os itens do menu padrão */
-    }
-    .menu-icon {
-        display: block; /* Exibe o ícone do menu */
-    }
-    .box {
-        flex-basis: calc(50% - 20px); /* Em telas menores que 768px, altera a largura para cerca de 1/2 do contêiner */
-    }
-    .navbar li {
-        display: block; /* Exibe os itens do menu padrão */
-    }
-    .destaque-container {
-        flex-direction: column;
-        align-items: center;
-    }
-    .destaque-texto {
-        margin-bottom: 20px;
-        text-align: center;
-    }
-   
-    .destaque-imagem img {
-        width: auto;
-        height: auto;
-        border-radius: 0%;
-    }
-    .titulo-destaque {
-        font-size: 30px;
-    }
-}
-
-
-@media screen and (min-width: 769px) {
-    .navbar li {
-        display: block; /* Exibe os itens do menu padrão */
-        
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .box {
-        flex-basis: calc(100% - 20px); /* Em telas menores que 500px, altera a largura para ocupar todo o contêiner */
-    }
-}
-
-
-
-h3 {
-    /* padding-top: 20px; */
-    padding-left: 30px; 
-    /* font-size: 32px;  */
-    padding: 1rem 0;
-    font-family:system-ui, -apple-system;
-    font-weight: 700;
-    padding-bottom: 30px;
-}
-
-p{
-    padding-left: 20px;
-}
-
-
-
-.dropdown-item {
-    text-align: left; 
-    white-space: normal; 
-    overflow: hidden; 
-    text-overflow: ellipsis; 
-    padding: 0;
-}
+/* Footer */
 
 .footer {
     display: flex;
@@ -378,4 +332,90 @@ p{
     font-size: 20px;
 }
 
+/* Breakpoint para dispositivos médios */
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    .navbar li {
+        display: none; /* Esconde os itens do menu padrão */
+    }
+    .menu-icon {
+        display: block; /* Exibe o ícone do menu */
+    }
+    /* .box { */
+        /* flex-basis: calc(50% - 20px); Em telas menores que 768px, altera a largura para cerca de 1/2 do contêiner */
+    /* } */
+    .navbar li {
+        display: block; /* Exibe os itens do menu padrão */
+    }
+    .destaque-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .destaque-texto {
+        margin: 0;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+   
+    .destaque-imagem img {
+        /* width: auto; */
+        width: 100%;
+        height: auto;
+        border-radius: 0%;
+    }
+    .titulo-destaque {
+        font-size: 30px;
+    }
+    .informacao{
+        margin: 5% ;
+    }
+    .navbar{
+        justify-content: space-between;
+    }
+    .contagem{
+        margin: 0 5%;
+        height: auto;
+        margin-top: 260px;
+        flex-direction: column;
+        gap: 1rem;
+        width: 90%;
+    }
+}
+
+
+/* @media screen and (min-width: 769px) { */
+    /* .navbar li { */
+        /* display: block; Exibe os itens do menu padrão */
+    /* } */
+/* } */
+
+/* Breakpoint para dispositivos pequenos */
+@media screen and (max-width: 548px) {
+    body{
+        font-size: 90%;
+    }
+    .box {
+        /* flex-basis: calc(100% - 20px); Em telas menores que 500px, altera a largura para ocupar todo o contêiner */
+        width: 95%;
+    }
+    .containerCards{
+        margin-top: 220px;
+    }
+    footer{
+        margin-top: 100px;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Breakpoint para ajuste do footer abaixo de 470px */
+@media screen and (max-width: 470px) {
+    footer{
+        margin-top: 250px;
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
