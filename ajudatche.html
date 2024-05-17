@@ -13,45 +13,47 @@
 </head>
 
 <body>
+    <header>
+        <nav class="navbar navbar-expand-md  navbar-white">
+            <h2 class="titulo">AJUDA TCHÊ</h2>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i> <!-- Ícone de barras de hambúrguer -->
+            </button>
 
-    <nav class="navbar navbar-expand-md fixed-top navbar-white">
-        <h2 class="titulo">AJUDA TCHÊ</h2>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-bars"></i> <!-- Ícone de barras de hambúrguer -->
-        </button>
-
-        <div class="collapse navbar-collapse bg-light" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#" onclick="createAll()">Inicio</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Serviços
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#"
-                                onclick="createCardsType('assistência financeira')">Assistência Financeira</a></li>
-                        <li><a class="dropdown-item" href="#" onclick="createCardsType('segunda via')">Segunda via
-                                Docs</a></li>
-                        <li><a class="dropdown-item" href="#" onclick="createCardsType('reformas')">Reformas e
-                                Reparos</a></li>
-                        <li><a class="dropdown-item" href="#" onclick="createCardsType('saúde')">Assistência Saúde</a>
-                        </li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#" onclick="createAll()">Todos serviços</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#voluntarios">Quem somos</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+            <div class="collapse navbar-collapse bg-light" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="createAll()">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Serviços
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#"
+                                    onclick="createCardsType('assistência financeira')">Assistência Financeira</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="createCardsType('segunda via')">Segunda via
+                                    Docs</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="createCardsType('reformas')">Reformas e
+                                    Reparos</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="createCardsType('saúde')">Assistência Saúde</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#" onclick="createAll()">Todos serviços</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#voluntarios">Quem somos</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
     <main>
 
         <div class="destaque-container">

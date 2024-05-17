@@ -340,6 +340,7 @@ main{
     .navbar li {
         display: none; /* Esconde os itens do menu padrão */
     }
+    
     .menu-icon {
         display: block; /* Exibe o ícone do menu */
     }
@@ -365,15 +366,13 @@ main{
         height: auto;
         border-radius: 0%;
     }
-    .titulo-destaque {
-        font-size: 30px;
+    .destaque-texto .titulo-destaque {
+        font-size: 36px;
     }
     .informacao{
         margin: 5% ;
     }
-    .navbar{
-        justify-content: space-between;
-    }
+
     .contagem{
         margin: 0 5%;
         height: auto;
@@ -382,6 +381,16 @@ main{
         gap: 1rem;
         width: 90%;
     }
+
+    .dropdown-menu{
+        width: 200px;
+    }
+
+    body {
+        padding-right: 0;
+    }
+    
+
 }
 
 
@@ -417,5 +426,7 @@ main{
         flex-direction: column;
         align-items: center;
     }
+
 }
+
 
