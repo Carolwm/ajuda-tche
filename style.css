@@ -207,25 +207,18 @@ main>div {
     margin-bottom: 90px;
 }
 
-.card-content {
+/* .card-content {
     flex-grow: 1;
     padding-bottom: 40px;
     position: relative;
-}
-
-/* .containerCards p{
-    margin-top: -20px;
-    margin-right: 10px;
 } */
 
 .containerCards h3 {
     margin-top: 60px;
-    /* margin-left: 20px; */
     font-size: 24px;
 }
 
 .box {
-    /* flex: 1 1 calc(33.33% - 20px); */
     background-color: #f1f1f1;
     padding: 1rem;
     margin: 10px;
@@ -236,8 +229,6 @@ main>div {
     position: relative;
     border: 1px solid rgb(179, 179, 179);
     flex-direction: column;
-    /* scrollbar-width:thin; */
-
 }
 
 .box p {
@@ -315,11 +306,14 @@ main>div {
     height: 30px;
 }
 
-.voluntarios {
-    margin-left: 20px;
-    margin-right: 20px;
-    text-align: center;
-    height: 300px;
+.voluntarios a {
+    display: inline-block;
+    width: 45%;
+    text-decoration: none;
+}
+.voluntarios i {
+    display: inline-block;
+    margin-left: 10px;
 }
 
 .voluntarios h4 {
@@ -351,23 +345,26 @@ main>div {
 /* Footer */
 
 .footer {
-    display: flex;
-    justify-content: space-between;
+ 
     padding: 30px 60px;
     background-color: #0E5F4F;
     color: #ffffff;
-    height: 230px;
+    /* height: 230px; */
+    
 }
 
 .footer-column {
-    flex: 1;
-    margin-right: 20px;
+    /* flex: 1; */
+    /* margin-right: 20px; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
     margin-top: 20px;
 }
 
-.footer-column:last-child {
+/* .footer-column:last-child {
     margin-right: 0;
-}
+} */
 
 .footer a {
     color: #ffffff;
@@ -378,7 +375,7 @@ main>div {
 
 .footer img {
     margin-top: 25px;
-    margin-right: 30px;
+    margin-right: 2rem;
 }
 
 .logo {
@@ -388,24 +385,27 @@ main>div {
     background-color: #ffffff;
     color: #333333;
     height: 100px;
-    margin-top: 30px;
+    padding: 2rem 3rem;
+    /* margin-top: 30px;
     margin-bottom: 30px;
     margin-left: 60px;
-    margin-right: 80px;
+    margin-right: 80px; */
 }
 
 .logo img {
-    margin-right: 10px;
+    /* margin-right: 10px; */
     /* Espaçamento entre o logo e as redes sociais */
-    height: 120px;
+    height: 100px;
 }
 
 .social-icons {
     display: flex;
+    justify-content: end;
+    gap: 2rem;
 }
 
 .social-icons a {
-    margin-left: 50px;
+    /* margin-left: 50px; */
     /* Espaçamento entre os ícones das redes sociais */
     color: #333333;
     /* Cor dos ícones */
@@ -413,7 +413,6 @@ main>div {
 }
 
 .square i {
-
     font-size: 20px;
     color: green;
     background-color: #272727;
@@ -472,7 +471,14 @@ main>div {
         gap: 1rem;
         width: 90%;
     }
-
+    .logo img{
+        height: 80px;
+    }
+    .footer img {
+        margin-top: 25px;
+        width: 100%;
+    }
+  
     /* .dropdown-menu{
         width: 200px;
     } */
@@ -480,23 +486,18 @@ main>div {
 }
 
 
-/* @media screen and (min-width: 769px) { */
-/* .navbar li { */
-/* display: block; Exibe os itens do menu padrão */
-/* } */
-/* } */
 
 /* Breakpoint para dispositivos pequenos */
 @media screen and (max-width: 548px) {
     body {
-        font-size: 90%;
+        font-size: 80%;
     }
-
     .box {
-        /* flex-basis: calc(100% - 20px); Em telas menores que 500px, altera a largura para ocupar todo o contêiner */
         width: 100%;
     }
-
+.contagem{
+    margin-top: 120px;
+}
     .containerCards {
         margin-top: 180px;
     }
@@ -506,14 +507,21 @@ main>div {
         flex-direction: column;
         align-items: center;
     }
+    .social-icons{
+        gap: 1rem;
+        justify-content: center;
+    }
+    .logo img{
+        height: 50px;
+    }
 }
 
 
 /* Breakpoint para ajuste do footer abaixo de 470px */
-@media screen and (max-width: 470px) {
+/* @media screen and (max-width: 470px) {
     footer {
         margin-top: 250px;
         flex-direction: column;
         align-items: center;
     }
-}
+} */
