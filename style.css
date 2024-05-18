@@ -11,8 +11,10 @@ body {
     width: 100%;
 }
 
+
 body {
     background-color: rgb(255, 255, 255);
+    overflow-y: hidden;
 }
 
 ul {
@@ -33,7 +35,6 @@ nav img {
     margin-left: 30px;
     width: 300px;
 }
-
 
 .navbar {
     list-style-type: none;
@@ -60,7 +61,7 @@ nav img {
 
 .menu {
     display: flex;
-    gap: 30%;
+    gap: 40%;
 }
 
 .navbar-nav {
@@ -72,17 +73,17 @@ nav img {
     text-decoration: none;
     color: #333;
     font-size: 18px;
+    transition: 0.3s;
 }
 
 .navbar a:hover {
-    color: #00800b;
+    color: #0E5F4F;
+    font-size: 21px;
 }
 
 
 main {
-    /* margin-top: 120px;  */
     padding: 2%;
-
 }
 
 main>div {
@@ -206,11 +207,6 @@ main>div {
     margin-bottom: 90px;
 }
 
-/* .card-content {
-    flex-grow: 1;
-    padding-bottom: 40px;
-    position: relative;
-} */
 
 .containerCards h3 {
     margin-top: 60px;
@@ -228,8 +224,18 @@ main>div {
     position: relative;
     border: 1px solid rgb(179, 179, 179);
     flex-direction: column;
+    transition: 0.3s;
+    box-shadow: 0 0 5px rgba(10, 10, 10, 0.3);
 }
-
+.box:hover{
+    box-shadow: 0 0 10px rgba(10, 10, 10, 1);
+}
+.box a{
+    transition: 0.3s;
+}
+.box a:hover{
+    color: #0E5F4F;
+}
 .box p {
     overflow-y: auto;
     height: 80px;
@@ -246,8 +252,8 @@ main>div {
      opacity: 0.5; 
 }
 
-.box-vermelho .square {
-    background-color: #F50D0D;
+.box-verde-2 .square {
+    background-color: #0E5F4F;
     /* Cor vermelha */
     opacity: 0.5;
 }
@@ -293,9 +299,6 @@ main>div {
 .square img{
     width: 70%;
     border-radius: 2px;
-    /* background-color: transparent; */
-    /* opacity: 80%; */
-    /* object-fit: contain; */
 }
 
 .divisao {
@@ -343,11 +346,11 @@ main>div {
 
 /* Footer */
 
-.footer {
- 
-    padding: 30px 60px;
+footer {
+    padding: 20px;
     background-color: #0E5F4F;
     color: #ffffff;
+    margin-right: 90px;
     /* height: 230px; */
     
 }
@@ -371,10 +374,11 @@ main>div {
     font-weight: 700;
     margin-top: 10px;
 }
-
-.footer img {
-    margin-top: 25px;
-    margin-right: 2rem;
+.footer-column img {
+    margin-top: 5px;
+    padding-right: 30px;
+    margin-bottom: 25px;
+    width: 400px;
 }
 
 .logo {
@@ -383,12 +387,11 @@ main>div {
     align-items: center;
     background-color: #ffffff;
     color: #333333;
-    height: 100px;
+    height: 150px;
     padding: 2rem 3rem;
-    /* margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 30px
     margin-left: 60px;
-    margin-right: 80px; */
+    margin-right: 80px;
 }
 
 .logo img {
@@ -409,8 +412,16 @@ main>div {
     color: #333333;
     /* Cor dos ícones */
     font-size: 20px;
-}
+    transition: 0.3s;
 
+}
+.social-icons a:hover {
+    /* margin-left: 50px; */
+    /* Espaçamento entre os ícones das redes sociais */
+    color: #0E5F4F;
+    /* Cor dos ícones */
+    font-size: 24px;
+}
 .square i {
     font-size: 20px;
     color: green;
@@ -425,6 +436,7 @@ main>div {
     }
 }
 
+/* Breakpoint para dispositivos médios */
 /* Breakpoint para dispositivos médios */
 @media screen and (max-width: 768px) {
 
@@ -534,16 +546,24 @@ main>div {
         margin-right: 25px;
     }
 
-    .footer{
-        margin-bottom: 30px;
+
+    .logo{
+        height: 250px;
     }
 
     .logo img{
-        height: 80px;
+        height: 100px;
+        margin-bottom: 280px;
     }
     .footer img {
         margin-top: 25px;
-        width: 100%;
+        width: 90%;
+        margin-left: 30px;
+    }
+
+    .social-icons{
+        margin-bottom: 280px;
+        margin-left: 100px;
     }
   
     /* .dropdown-menu{
@@ -551,6 +571,7 @@ main>div {
     } */
 
 }
+
 
 
 

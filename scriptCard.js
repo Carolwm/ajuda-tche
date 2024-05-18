@@ -3,9 +3,8 @@ let allCards = [];
 
 function createCards(data) {
     const cardsContainer = document.getElementById('container');
-    // const classes = ['box-verde', 'box-vermelho', 'box-amarelo'];
     let icon = '';
-    data.forEach(function (item, index) {
+    data.forEach(function (item) {
         var card = document.createElement('div');
         card.classList.add('box');
         switch (item.tipo) {
@@ -26,7 +25,7 @@ function createCards(data) {
                 icon = 'ref'
                 break;
             case 'seguros':
-                card.classList.add('box-vermelho');
+                card.classList.add('box-verde-2');
                 icon = 'seguro'
                 break;
         }
@@ -40,40 +39,14 @@ function createCards(data) {
         <p>${item.descricao}</p>
         <a class="ver-mais" target="_blank" href="${item.link}">Saiba mais</a>
     `;
-
+        allCards.push(card);
         cardsContainer.appendChild(card);
 
-        // var square = document.createElement('div');
-        // square.classList.add('square');
-        // card.appendChild(square);
-
-        // var content = document.createElement('div');
-        // content.classList.add('card-content'); // Adicione uma classe para estilização
-        // card.appendChild(content);
-
-        // var title = document.createElement('h3');
-        // title.textContent = item.titulo;
-        // content.appendChild(title);
-
-        // var description = document.createElement('p');
-        // description.textContent = item.descricao;
-        // content.appendChild(description);
-
-        // var link = document.createElement('a');
-        // link.classList.add('ver-mais');
-        // link.textContent = 'Saiba mais';
-        // link.href = item.link;
-        // link.target = '_blank';
-        // content.appendChild(link);
-
-        // allCards.push(card); // Adicione o cartão à lista
-        // cardsContainer.appendChild(card);
     });
 }
 
 function createCardsType(tipo) {
     const cardsContainer = document.getElementById('container');
-    // const classes = ['box-verde', 'box-vermelho', 'box-amarelo'];
 
     fetch(jsonFilePath)
         .then(response => response.json())
@@ -102,18 +75,10 @@ function createCardsType(tipo) {
                             icon = 'ref'
                             break;
                         case 'seguros':
-                            card.classList.add('box-vermelho');
+                            card.classList.add('box-verde-2');
                             icon = 'seguro'
                             break;
                     }
-                    // var square = document.createElement('div');
-                    // square.classList.add('square');
-
-                    // var icon = document.createElement('i');
-                    // icon.classList.add('fa-solid', 'fa-user-nurse');
-
-                    // square.appendChild(icon);
-                    // card.appendChild(square);
 
                     card.innerHTML += `
                         <div class="square">
@@ -122,7 +87,7 @@ function createCardsType(tipo) {
 
                         <h3>${item.titulo}</h3>
                         <p>${item.descricao}</p>
-                        <a class="ver-mais" target="_blank" href="${item.link}">Saiba mais</a>
+                        <a class="ver-mais" target="_blank" href="${item.link}">Saiba mais </a>
                     `;
 
                     cardsContainer.appendChild(card);
