@@ -113,8 +113,37 @@
         "descricao": "A Universidade Unisinos e a Universidade Feevale mobilizam uma ação para conserto de eletrônicos que foram afetados pelas águas das enchentes.",
         "link": "https://fenacon.org.br/rede-de-noticias/sescon-rs-informa-unisinos-e-freevale-mobilizam-acao-para-conserto-de-eletronicos-afetados-pelas-aguas/#:~:text=A%20Universidade%20Unisinos%20e%20a,mesmo%20que%20tenham%20sido%20molhados",
         "tipo": "reformas"
+    },
+    { 
+        "titulo": "Auxílio Reconstrução",
+        "descricao": "O Governo Federal irá pagar R$ 5,1 mil, em parcela única, para todas as famílias com residências afetadas diretamente na catástrofe.",
+        "link": "https://www.gov.br/planalto/pt-br/acompanhe-o-planalto/noticias/2024/05/governo-anuncia-auxilio-reconstrucao-de-r-5-1-mil-para-todas-as-familias-com-residencias-afetadas-por-chuvas",
+        "tipo": "assistência financeira"
+    },
+    { 
+        "titulo": "Abono Salarial Antecipado",
+        "descricao": "Antecipação do calendário de pagamento do abono salarial 2024 para maio para o total de trabalhadores habilitados, cujo estabelecimento empregador esteja nos municípios com reconhecimento federal de calamidade/emergência.",
+        "link": "",
+        "tipo": "assistência financeira"
+    },
+    { 
+        "titulo": "Minha Casa Minha Vida",
+        "descricao": "Caso tenha financiamento realizado por meio do programa MINHA CASA, MINHA VIDA, poderá pedir a suspensão por um período de 6 meses das parcelas. Ainda, será fornecido aumento do tempo para usar o saldo do FGTS para pagar parcelas em atraso, de seis para 12 meses.",
+        "link": "",
+        "tipo": "assistência financeira"
+    },
+    { 
+        "titulo": "Seguro Desemprego",
+        "descricao": "O Governo Federal anunciou medida de pagamento de parcela extra de seguro desemprego para aqueles que estão recebendo o benefício. O pagamento será realizado de forma automática.",
+        "link": "",
+        "tipo": "assistência financeira"
+    },
+    { 
+        "titulo": "Óculos de Grau Gratuito",
+        "descricao": "Para quem perdeu seus óculos nas enchentes, a rede de óticas Mercadão dos Óculos doará 2.000 óculos por meio do projeto 'Olharesdo Bem'.",
+        "link": "https://docs.google.com/forms/d/e/1FAIpQLSdL1Rzbt_LEhfh1jQD6hz6lImslfcEOJDwjt2g4OVAKZ66btA/viewform",
+        "tipo": "saúde"
     }
-
 
 
 ]
