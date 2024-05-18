@@ -432,44 +432,112 @@ main>div {
         gap: 0;
     }
 
+    header img {
+        width: 180px;
+        margin-left: 0px;
+
+    }
+
+    nav{
+        height: auto;
+    }
+
     .destaque-container {
         flex-direction: column;
         align-items: center;
-        padding: 1rem;
+        margin-top: 40px;
     }
 
     .destaque-texto {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         text-align: center;
+    }
+
+    .destaque-texto h2{
+        font-weight: 700;
+        padding-left: 10px;
+        padding-right: 10px;
+
+    }
+
+    .linha-personalizada{
+        background-color: #ffffff;
     }
 
     .destaque-imagem img {
         /* width: auto; */
         width: 100%;
-        height: auto;
-        border-radius: 0%;
+        height: 250px;
+        border-bottom-left-radius: 14px;
+        border-bottom-right-radius: 14px;
+        border-top-left-radius: 0%;
+        border-top-right-radius: 0%;
+
     }
 
     .destaque-texto .titulo-destaque {
-        font-size: 32px;
+        font-size: 36px;
         width: 90%;
     }
-    .descricao-destaque{
+    .destaque-texto .descricao-destaque{
         width: 90%;
+        font-size: 18px;
+        font-weight: 500;
+        margin-top: 20px;
+        
     }
 
     .informacao {
-        margin: 5%;
+        margin: 3%;
+    }
+
+    .informacao p{
+        text-align: left;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    main>div {
+        margin: 0 auto;
+        margin-top: 50px;
     }
 
 
     .contagem {
-        margin: 0 5%;
-        height: auto;
-        flex-direction: column;
+        height: 100px;
+        flex-direction:row;
         gap: 1rem;
-        width: 90%;
+        width: 100%;
+        
     }
+
+    .contagem h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .contagem p {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .contagem .t1{
+        margin-left: 18px;
+    }
+
+    .contagem .t2{
+        margin-bottom: 18px;
+        margin-right: 10px;
+    }
+
+    .contagem .t3{
+        margin-right: 25px;
+    }
+
+    .footer{
+        margin-bottom: 30px;
+    }
+
     .logo img{
         height: 80px;
     }
