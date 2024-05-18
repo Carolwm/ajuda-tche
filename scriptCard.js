@@ -25,7 +25,7 @@ function createCards(data) {
                 icon = 'ref'
                 break;
             case 'seguros':
-                card.classList.add('box-vermelho');
+                card.classList.add('box-verde-2');
                 icon = 'seguro'
                 break;
         }
@@ -75,7 +75,7 @@ function createCardsType(tipo) {
                             icon = 'ref'
                             break;
                         case 'seguros':
-                            card.classList.add('box-vermelho');
+                            card.classList.add('box-verde-2');
                             icon = 'seguro'
                             break;
                     }
