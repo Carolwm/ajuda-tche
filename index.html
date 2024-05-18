@@ -19,8 +19,7 @@
     <header>
         <nav class="navbar navbar-expand-md fixed-top">
             <div class="container-fluid menu">
-                <!--<h2 class="titulo"> Ajuda Tche </h2>-->
-                <img class="navbar-brand" style="width: 40%;" src="./imagens/logo.svg" alt="Logo ajuda tchê">
+                <img style="width: 40%;" class="navbar-brand" src="./imagens/logo.svg" alt="Logo ajuda tchê">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapsibleNavbar">
                     <span class="navbar-toggler-icon"></span>
@@ -111,47 +110,93 @@
 
         <div class="divisao"></div>
 
-        <div class="voluntarios" id="voluntarios">
-            <h4>Pessoas que fizeram tudo isso acontecer</h4>
+        <div class="voluntarios" >
+            <h4 id="voluntarios">Pessoas que fizeram tudo isso acontecer</h4>
             <h1>Agradecimentos aos voluntários:</h1>
-            <p>Nome completo - Linkedin; Nome completo - Linkedin; Nome completo - Linkedin; Nome completo - Linkedin;
-                Nome
-                completo- Linkedin; Nome completo- Linkedin; Nome completo - Linkedin; Nome completo - Linkedin; Nome
-                completo - Linkedin; Nome completo - Linkedin; Nome completo- Linkedin; Nome completo- Linkedin; Nome
-                completo - Linkedin; Nome completo - Linkedin; Nome completo - Linkedin; Nome completo - Linkedin; Nome
-                completo- Linkedin; Nome completo- Linkedin;</p>
-        </div>
+            <p>
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/in/ramonsl/" target="_blank"><i class="fab fa-linkedin"></i> Ramon Lummertz</a> | 
+                        <a href="https://www.linkedin.com/in/andrezzaandrade/" target="_blank"><i class="fab fa-linkedin"></i> Andrezza Andrade</a> |
+                        <a href="https://www.linkedin.com/in/juliano-ramos-matos-4a41b641/" target="_blank"><i class="fab fa-linkedin"></i> Juliano Ramos</a> |
+                        <a href="https://www.linkedin.com/in/lucassaraiva5/" target="_blank"><i class="fab fa-linkedin"></i> Lucas Saraiva</a> |
+                        <a href="https://www.linkedin.com/in/tiagoabadedias/" target="_blank"><i class="fab fa-linkedin"></i> Tiago Abade</a> |  
+                        <a href="https://www.linkedin.com/in/daniel-souza-729aa3183/" target="_blank"><i class="fab fa-linkedin"></i> Daniel Souza</a> |
+                        <a href="https://www.linkedin.com/in/larissa-carlos-b277401ab/" target="_blank"><i class="fab fa-linkedin"></i> Larissa Carlos</a> | 
+                        <a href="https://www.linkedin.com/in/ana-caroline-w-moreto-23818225b/" target="_blank"><i class="fab fa-linkedin"></i> Ana Caroline</a> |
+                        <a href="https://www.linkedin.com/in/bauercarol/" target="_blank"><i class="fab fa-linkedin"></i> Caroline Bauer</a> 
+                    </li>
+                </ul>
+            </p>
+            <p>
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/in/gabriela-anjos18/" target="_blank"><i class="fab fa-linkedin"></i> Gabriela Anjos</a> | 
+                        <a href="https://www.linkedin.com/in/luan-lippert-hoffmann-9b4204283/" target="_blank"><i class="fab fa-linkedin"></i> Luan Lippert</a> |
+                        <a href="https://www.linkedin.com/in/xjoaopedro/" target="_blank"><i class="fab fa-linkedin"></i> João Pedro</a> |
+                        <a href="https://www.linkedin.com/in/endriwmsi/" target="_blank"><i class="fab fa-linkedin"></i> Endriw Schiavenato</a> |
+                        <a href="https://www.linkedin.com/in/marcusviniciusbarcelos/" target="_blank"><i class="fab fa-linkedin"></i> Marcus Barcelos</a> |  
+                        <a href="https://www.linkedin.com/in/suelen-daitx-a912561a0/" target="_blank"><i class="fab fa-linkedin"></i> Suelen Daitx</a> |
+                        <a href="https://www.linkedin.com/in/andersongpatricio/" target="_blank"><i class="fab fa-linkedin"></i> Anderson Patrício</a> | 
+                        <a href="https://www.linkedin.com/in/leonardo-moraes-2b7513247/" target="_blank"><i class="fab fa-linkedin"></i> Leonardo Moraes</a> |
+                        <a href="https://www.linkedin.com/in/erick-rocha-saggiorato-b7861a269/" target="_blank"><i class="fab fa-linkedin"></i> Erick Rocha</a> 
+                    </li>
+                </ul>
+            </p>
+            <p>
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/in/douglas-rigol-8b70a62a1/" target="_blank"><i class="fab fa-linkedin"></i> Douglas Rigol</a> | 
+                        <a href="https://www.linkedin.com/in/marjorie-pereira-69855026b/" target="_blank"><i class="fab fa-linkedin"></i> Marjorie Pereira</a> |
+                        <!--<a href="link perfil" target="_blank"><i class="fab fa-linkedin"></i> fulano</a> |
+                        <a href="link perfil" target="_blank"><i class="fab fa-linkedin"></i> fulano</a> |
+                        <a href="link perfil" target="_blank"><i class="fab fa-linkedin"></i> fulano</a> |  
+                        <a href="link perfil" target="_blank"><i class="fab fa-linkedin"></i> fulano</a> |
+                        <a href="link perfil" target="_blank"><i class="fab fa-linkedin"></i> fulano</a> | 
+                        <a href="link perfil" target="_blank"><i class="fab fa-linkedin"></i> fulano</a> |
+                        <a href="link perfil" target="_blank"><i class="fab fa-linkedin"></i> fulano</a> -->
+                    </li>
+                </ul>
+            </p>
     </main>
 
 
     <footer class="footer">
         <div class="footer-column">
-            <!--coluna esquerda -->
-            <h4>Informações</h4>
             <ul>
-                <li><a href="#">Sobre nós</a></li>
-                <li><a href="#">Contato</a></li>
-                <li><a href="#">Termos de serviço</a></li>
+                <li><a class="dropdown-item" href="#x" onclick="createCardsType('seguros')">Seguros</a></li>
+                <li><a class="nav-link" href="#" onclick="createCardsType('assistência financeira')">Assistência Financeira</a></li>
+                <li><a class="nav-link" href="#" onclick="createCardsType('segunda via')">Segunda via Docs</a></li>
             </ul>
         </div>
         <div class="footer-column">
-            <!--coluna central -->
             <ul>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Política de privacidade</a></li>
+                <li><a class="nav-link" href="#" onclick="createCardsType('reformas')">Reformas e Reparos</a></li>
+                <li><a class="nav-link" href="#" onclick="createCardsType('saúde')">Assistência Saúde</a></li>
+                <li><a class="nav-link" href="#" onclick="createAll()">Todos serviços</a></li>
             </ul>
         </div>
-        <div class="footer-column">
-            <!--coluna direita -->
-            <h4>Siga-nos</h4>
-            <div class="social-icons">
-                <!-- Ícones de redes sociais aqui -->
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
+        <div class="footer-column"> 
+            <img src="/imagens/ajudatche-logo-branco.svg" alt="">
         </div>
     </footer>
+    
+    <div class="logo">
+        <img src="/imagens/logo-curso.jpg" alt="" >
+        <div class="logo-column">
+            <div class="social-icons">
+                <a href="https://www.facebook.com/computacao.torres/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/ComputacaoRS" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/computacaotorres/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/adsulbra/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+
+    </main>
+
+
+    
 
     <!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
@@ -159,6 +204,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
     <script src="scriptCard.js"></script>
+
 
 </body>
 
